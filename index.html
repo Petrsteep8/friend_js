@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanek Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bd">
+    <div class="decor-circle"></div>
+    <div class="decor-circle"></div>
+
+    <div id="first">
+        <img src="photos/photo_2026-01-27_13-43-26-no-bg-preview (carve.photos).png" id="sanya" alt="Саня">
+        
+        <div class="game-icons">
+            <img src="photos/мячик_воллейбольный-no-bg-preview (carve.photos).png" id="ball" alt="Мяч" class="clickable-ball game-icon">
+            <img src="photos/valorant.jpg" id="valorant-icon" alt="Valorant" class="clickable-valorant game-icon">
+        </div>
+    </div>
+
+    <div id="second">
+        <div class="slider-game">
+            <div class="instruction">Нажми SPACE</div>
+            <div class="slider-container">
+                <div class="target-zone"></div>
+                <div class="slider" id="slider"></div>
+                <div class="center-line"></div>
+            </div>
+            <div class="message" id="game-message"></div>
+        </div>
+
+        <div class="court-container">
+            <img src="photos/корт_воллейбольный.jpg" id="court" alt="Корт">
+            <img src="photos/мячик_воллейбольный-no-bg-preview (carve.photos).png" id="second-ball" alt="Мяч" class="game-ball">
+            <div class="net"></div>
+            <div class="target-area"></div>
+        </div>
+
+        <button id="back-btn" class="back-btn">← Назад</button>
+    </div>
+
+    <div id="valorant-game" style="display: none;">
+        <canvas id="valorantCanvas" width="800" height="600"></canvas>
+        <div class="shooter-message" id="shooter-message"></div>
+        <button id="back-btn-valorant" class="back-btn">← Назад</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
